@@ -18,4 +18,9 @@ public interface BrandService extends IService<Brand> {
      */
     Page<Brand> queryPageList(Long currentPage, Long size, Brand brand);
 
+    /**
+     * 根据分类ID查询品牌
+     */
+    List<Brand> queryByCategoryId(Integer id);
+
 }
